@@ -1,4 +1,4 @@
-/*  import google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -34,6 +34,17 @@ html{
   gap: 120px 80px;
    
   grid-template-rows:    minmax(100px, 130px);
+}
+#projectbt{
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    width:80px;
+    border-radius: 20px;
+}
+#projectbt a{
+    color:white;
 }
 section{
     padding: 100px 0;
@@ -561,6 +572,25 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+    #projectbt{
+        background-color: red;
+        text-decoration: none;
+        color: white;
+        height: 40px;
+        width:80px;
+        border-radius: 20px;
+    }
+    #projectbt a{
+        color:white;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows:    10px 10px 10px 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 120px 80px;
+         
+        grid-template-rows:    minmax(100px, 130px);
+      }
 }
 
 @media (max-width: 690px) {
@@ -579,6 +609,25 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+    #projectbt{
+        background-color: red;
+        text-decoration: none;
+        color: white;
+        height: 40px;
+        width:80px;
+        border-radius: 20px;
+    }
+    #projectbt a{
+        color:white;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-rows:    10px 10px 10px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 120px 80px;
+         
+        grid-template-rows:    minmax(100px, 130px);
+      }
 }
 
 @media (max-width: 500px) {
@@ -610,4 +659,23 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    #projectbt{
+        background-color: red;
+        text-decoration: none;
+        color: white;
+        height: 40px;
+        width:80px;
+        border-radius: 20px;
+    }
+    #projectbt a{
+        color:white;
+    }   
+    .grid-container {
+        display: grid;
+        grid-template-rows:    10px 10px 10px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 120px 80px;
+         
+        grid-template-rows:    minmax(100px, 130px);
+      }
 }
