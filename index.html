@@ -10,22 +10,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
 </head>
 <body>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
-        <div class="max-width">
+    <nav class="navbar" style="color:crimson;background-color:black;">
+        <div class="max-width"  >
            
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#skill" class="menu-btn">Skills</a></li>
-                <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            <ul class="menu" style="margin-left: -25px;"  >
+                <li><a style="color:crimson;font-size:28px;" href="#home" class="menu-btn">Home</a></li>
+                <li><a style="color:crimson;font-size:28px;" href="#about" class="menu-btn">About</a></li>
+                <li><a style="color:crimson;font-size:28px;" href="#skill" class="menu-btn">Skills</a></li>
+                <li><a style="color:crimson;font-size:28px;" href="#projects" class="menu-btn">Projects</a></li>
+                <li><a style="color:crimson;font-size:28px;" href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -37,9 +38,9 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1"style="color:black;">Hi, my name is</div>
+                <div class="text-1"style="color:black;"><br><br>Hi &#x1F44B;, My Name Is</div><br><br>
                 <div class="text-2" style="color:black;">Sachin Dhariwal</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <div class="text-3"><br><span class="typing"></span></div><br>
                 <a href="images/SACHIN_DHARIWAL_Resume.pdf">Resume</a>
             </div>
             
@@ -141,7 +142,23 @@
                 </div>
             </div>
         </div>
+        
     </section>
+    
+    
+    <section class="skill2" id="skill2">
+        <div class="max-width">
+            <h2 class="title">Github-Calendar</h2>
+             
+                <div class="calendar">
+                    
+                 
+              </div>
+            </div>
+        
+    </section>
+    
+
 
     <!-- contact section start -->
     <section class="contact" id="contact">
@@ -222,3 +239,19 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+<script>
+    GitHubCalendar(".calendar", "sachin59");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "sachin59", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "sachin59", {
+       proxy (sachin59) {
+         return fetch(`https://your-proxy.com/github?user=${sachin59}`)
+       }
+    }).then(r => r.text())
+</script>
