@@ -256,16 +256,6 @@
 
 
 
-<script>
-    GitHubCalendar(".calendar", "sachin59");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "sachin59", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "sachin59", {
-       proxy (sachin59) {
-         return fetch(`https://your-proxy.com/github?user=${sachin59}`)
-       }
-    }).then(r => r.text())
-</script>
+<script  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">  </script>    
+<link  rel="stylesheet"  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"  />  
+<script>       GitHubCalendar(".calendar", "mozakir178", { responsive: true });    </script>
